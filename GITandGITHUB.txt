@@ -94,3 +94,8 @@ Penjelasan Dan Istilah :
 >>>>>>>>>> (Cara keluar dari vim editor git= klik esc, kemudian tekan :q!) <<<<<<<<<<
 >>>>>>>>>> (Cara Keluar dari vim editor dan save perubahan = klik esc, kemudian tekan :wq!) <<<<<<<<<<
 >>>>>>>>>> (Cara Login untuk push dari git ke github {username = sesuai username di github & Password = setting > developer settings > personal acces token > [delet dan buat token baru kalau token sudah expired])} <<<<<<<<<<
+
+
+
+>>>>> .gitignore Link 1 = github.com/github/gitignore
+                 Link 2 = https://www.toptal.com/developers/gitignore/
