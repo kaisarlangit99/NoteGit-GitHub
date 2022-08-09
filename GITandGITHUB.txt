@@ -1,0 +1,96 @@
+GIT and GITHUB From Playlist Web Programming UNPAS Link = https://youtube.com/playlist?list=PLFIM0718LjIVknj6sgsSceMqlq242-jNf
+
+
+VCS = Version Control System
+	
+> Sebuah Sistem yang menyimpan 'rekaman / snapshot' perubahan pada source code
+> Memungkinkan bekerja berkolaborasi dengan lebih baik
+> Mengetahui siapa yang melakukan dan kapan sebuah perubahan terjadi
+> Memungkinkan kita untuk kembali ke keadaan sebelum perubahan (checkout)
+
+>>>Pengertian :
+
+>>>>> GIT = "Sebuah VCS terdistribusi untuk mengelola perubahan file di dalam folder".
+
+>>>>> GITHUB = "Layanan cloud untuk menyimpan & mengelola project/repo git."
+ 
+
+Istilah yang ada di GIT & GITHUB
+
+1.  Repository / repo = Folder project
+2.  Commit = "Riwayat perubahan file disimpan menggunakan serangkaian commit".
+3.  Branch = Cabang dari sebuah Commit
+4.  Merge = Penggabungan dari Branch
+5.  hash = Penanda unik pada sebuah commit
+6.  checkout = Berpindah ke sebuah commit
+7.  remote = Sumber yang memiliki repo
+8.  clone = Mengambil repo dari remote
+9.  Push = Proses MengUpload dari GIT ke GITHUB (Mengirimkan commit ke repo)
+10. Pull = Proses menerima dari GITHUB Ke GIT (Mengambil commit dari repo)
+
+>>> Yang Di push dan di Pull adalah Commit <<<
+
+
+Penjelasan Dan Istilah :
+
+1. Branching
+  > Membua git Branch
+  > Membuat snapshot tanpa mengganggu jalur utama (master branch)
+  > Fitur Experimental
+  > 2 Orang mengerjakan repo yang sama 
+
+2. Fork / Forking
+  > Membuat 'copy / duplikat' dari repo orang lain (beserta history-nya)
+  > Jembatan antara repo original dengan duplikatnya
+  > Modifikasi Terhadap repo original
+  > berkontribusi pada repo orang lain
+  > Fork != clone
+
+
+
+>>>>> Git Command (local) <<<<<
+
+  > $ git init
+  > $ git add <file(s)> (cara cepat untuk menambahkan semua file dengan $ git add .)
+  > $ git status
+  > $ git commit -m "Pesan yang disampaikan" (Kalau Status untrack wajib di add dulu sebelum di commit)
+  > $ git commit -am "Pesan Yang disampaikan" (Kalau Status Modified bisa langsung di commit)
+  > $ git config
+  > $ git branch
+  > $ git help
+  > $ git checkout <5 digit awal commit hash> -- <nama file> (mengembalikan sebuah keadaan sebelumnya dari branch)
+  > $ git checkout <7 digit awal commit hash> (untuk kembali ke commit sebelumnya) <> (Untuk kembali ke branch master= $ git checkut master) 
+  > $ git checkout <nama_branch> (Untuk pindah antar branch)
+  > $ git log (Untuk memunculkan semau history)
+  > $ git log --all --decorate --oneline --graph (untuk memvisualisasikan dari branch) (untuk mempermudah = $ alias graph="git log --all --decorate --oneline --graph" 
+  > $ git merge <nama_branch> (Untuk Menggabungkan Branch)
+  > $ git branch --merge (Untuk Mengetahui Branch mana yang sudah di merge)
+  > $ git branch -d <nama_branch> (Untuk Menghapus Branch)
+  > $ git clone <link> (Untuk mengclone repo dari GITHUB)
+  > $ git remote (Untuk Melihat nama remote, nama default = origin)
+  > $ git remote -v (Untuk Melihat nama dan addres remote lengkap)
+  > $ git push (Untuk mengupload/meng up to date dari git ke github)
+  > $ git config --list (Untuk melihat username dan email)
+  > $ git config --global user.name "nama_kalian" (untuk mengubah username siapa yang melakukan commit)
+  > $ git config --global user.email "@gmail_kalian" (Untuk Mengubah email siapa yang melakukan commit)
+  > $ mkdir nama_folder (Untuk Membuat folder baru)
+  > $ git fetch (untuk Mengecek Commit yang ada di remote udah sampai mana)
+  > ...
+  > enter untuk Membuka semua histori commit pada saan $ git log
+  > q Untuk kembali (quit)
+
+
+>>>>> 3 Area pad repo git
+  > Working tree
+  > Staging area
+  > History
+
+
+>>>>> Jenis Merge
+  > Fast Forward	= Terjadi ketika branch yang akan kita gabungkan berada dalam jalur langsung(direct path)
+  > Three-way Merge	= Merge commit (Membuat Commit baru)
+
+
+>>>>>>>>>> (Cara keluar dari vim editor git= klik esc, kemudian tekan :q!) <<<<<<<<<<
+>>>>>>>>>> (Cara Keluar dari vim editor dan save perubahan = klik esc, kemudian tekan :wq!) <<<<<<<<<<
+>>>>>>>>>> (Cara Login untuk push dari git ke github {username = sesuai username di github & Password = setting > developer settings > personal acces token > [delet dan buat token baru kalau token sudah expired])} <<<<<<<<<<
