@@ -76,6 +76,7 @@ Penjelasan Dan Istilah :
   > $ mkdir nama_folder (Untuk Membuat folder baru)
   > $ git fetch (untuk Mengecek Commit yang ada di remote udah sampai mana)
   > ...
+  > $ git rebase <nama_branch> (Workflow selain merge)
   > enter untuk Membuka semua histori commit pada saan $ git log
   > q Untuk kembali (quit)
 
